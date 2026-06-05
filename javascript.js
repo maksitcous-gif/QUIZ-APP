@@ -1201,7 +1201,7 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
-    selectedQuestions = shuffle([...questions]).slice(0, 25);
+    selectedQuestions = shuffle([...questions]).slice(0, 24);
     saveState();
     showQuestion();
 }
@@ -1297,7 +1297,7 @@ function showScore() {
     clearState();
     resetState();
  
-    let resultMessage = score >= 8 ? "🎉 You passed!" : "❌ You failed!";
+    let resultMessage = score >= 18 ? "🎉 You passed!" : "❌ You failed!";
  
     questionElement.innerHTML = `
         You scored ${score} out of ${selectedQuestions.length}!<br><br>
