@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #001e4d, #003b8a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#login-screen,
+#register-screen,
+#start-screen,
+#quiz-app {
+    background: #fff;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    height: fit-content;
+}
+
+h1 {
+    color: #001e4d;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #001e4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #003b8a;
+}
+
+#answer-buttons .btn {
+    padding: 10px;
+    background: #fff;
+    color: #001e4d;
+    border: 2px solid #ccc;
+    margin: 6px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answer-buttons .btn:hover:not([disabled]) {
+    background: #001e4d;
+    color: #fff;
+}
+
+.correct {
+    background: #4caf50 !important;
+    color: #fff !important;
+}
+
+.incorrect {
+    background: #f44336 !important;
+    color: #fff !important;
+}
+
+#next-btn {
+    display: none;
+    margin-top: 15px;
+}
+
+/* Auth screen layout */
+#auth-screen {
+    background: #fff;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    height: fit-content;
+}
+
+#register-section {
+    display: none;
+}
+p {
+    margin-top: 15px;
+    text-align: center;
+    color: #001e4d;
+}
+
+#quiz-app {
+    position: relative;
+}
+#total-timer {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #221918;
+    background: #efe9e9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

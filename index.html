@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUAN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+
+<div id="auth-screen">
+
+    <h1>Quiz Login</h1>
+
+    <h2 id="reg-heading" style="display:none;">Register</h2>
+
+    <input type="text" id="register-username" placeholder="Username" style="display:none;">
+
+    <input type="password" id="register-password" placeholder="Password" style="display:none;">
+
+    <button id="register-btn" style="display:none;">Register</button>
+
+    <hr style="display:none;">
+
+   <h2 id="login-heading">Login</h2>
+
+    <input type="text" id="login-username" placeholder="Username">
+
+    <input type="password" id="login-password" placeholder="Password">
+
+    <button id="login-btn">Login</button>
+
+    <p id="auth-message"></p> <br><hr>
+    <p>Welcome to the Quiz App.
+        Log in or create an account to begin your quiz journey.
+        Answer questions, beat the timer, and track your score as you improve.</p>
+
+</div>
+    <!-- START SCREEN -->
+    <div id="start-screen" style="display:none;">
+        <h1>Welcome to the Quiz App</h1>
+        <button id="start-btn">Start Quiz</button>
+        
+        
+        
+    </div>
+
+
+    
+
+    <!-- QUIZ APP (HIDDEN AT START) -->
+    <div class="app" id="quiz-app" style="display:none;">
+        <h1>My Quiz App</h1>
+        <button id="logout-btn">Logout</button>
+    
+        <div class="quiz">
+            <h2 id="question">Question goes here</h2>
+            <h3 id="status">Score: 0</h3>
+
+            <!-- TIMER -->
+            <h3 id="timer">Time: 15s</h3>
+            <h3 id="total-timer">Total Time: 40:00</h3>
+
+
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+</body>
+</html>
